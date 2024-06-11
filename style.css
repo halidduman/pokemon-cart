@@ -47,50 +47,7 @@ body{
     }
 }
 
-h1{
-    letter-spacing: 5px;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-}
-
-h3{
-    color: #ffff;
-}
-
-.search{
-    position: relative;
-}
-
-.search-Input{
-    font-family: "Pixelify Sans", sans-serif;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: transparent;
-    border: none;
-    font-size:16px;
-    padding: 12px;
-    height: 10px;
-    width: 15px;
-    transition: with 0.3s ease;
-    
-}
-
-.search-Input,.searchBtn:focus{
-    outline: none;
-    font-family: "Pixelify Sans", sans-serif;
-    border: 3px solid #1679AB;
-    border-radius: 1px;
+.pixel{
     clip-path: polygon(
         0px calc(100% - 20px),
         4px calc(100% - 20px),
@@ -129,17 +86,70 @@ h3{
         4px 20px,
         0px 20px
       );
+}
+
+h1{
+    background-color: #000000;
+    padding: 10px 20px;
+    letter-spacing: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+               
+}
+
+h3{
+    color: #ffff;
+}
+
+.search{
+    position: relative;
+}
+
+.search-Input{
+    font-family: "Pixelify Sans", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    border: none;
+    font-size:16px;
+    padding: 12px ;
+    height: 15px;
+    width: 20px;
+    transition: with 0.3s ease;
     
 }
 
-.searchBtn{
+
+
+
+.search-Input,:focus{
+    outline: none;
+    font-family: "Pixelify Sans", sans-serif;
+    border-radius: 1px;
+    
+    
+    
+}
+
+.searchBtn {
 background-color: rgb(203, 234, 250);
 border: none;
 color: #fff;
 font-size: 33px;
 position: absolute;
 top: 0;
-left: 0;
+left: -7px;
 transition: transform 0.3s ease
 }
 
@@ -188,89 +198,13 @@ background-color: #dfdfdf;
 .pokemon{
     margin: 10px;
     padding: 20px;
-    clip-path: polygon(
-        0px calc(100% - 20px),
-        4px calc(100% - 20px),
-        4px calc(100% - 12px),
-        8px calc(100% - 12px),
-        8px calc(100% - 8px),
-        12px calc(100% - 8px),
-        12px calc(100% - 4px),
-        20px calc(100% - 4px),
-        20px 100%,
-        calc(100% - 20px) 100%,
-        calc(100% - 20px) calc(100% - 4px),
-        calc(100% - 12px) calc(100% - 4px),
-        calc(100% - 12px) calc(100% - 8px),
-        calc(100% - 8px) calc(100% - 8px),
-        calc(100% - 8px) calc(100% - 12px),
-        calc(100% - 4px) calc(100% - 12px),
-        calc(100% - 4px) calc(100% - 20px),
-        100% calc(100% - 20px),
-        100% 20px,
-        calc(100% - 4px) 20px,
-        calc(100% - 4px) 12px,
-        calc(100% - 8px) 12px,
-        calc(100% - 8px) 8px,
-        calc(100% - 12px) 8px,
-        calc(100% - 12px) 4px,
-        calc(100% - 20px) 4px,
-        calc(100% - 20px) 0px,
-        20px 0px,
-        20px 4px,
-        12px 4px,
-        12px 8px,
-        8px 8px,
-        8px 12px,
-        4px 12px,
-        4px 20px,
-        0px 20px
-      );
+    
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 
 .image-container{
-    background-color: #102C57;
-    clip-path: polygon(
-        0px calc(100% - 20px),
-        4px calc(100% - 20px),
-        4px calc(100% - 12px),
-        8px calc(100% - 12px),
-        8px calc(100% - 8px),
-        12px calc(100% - 8px),
-        12px calc(100% - 4px),
-        20px calc(100% - 4px),
-        20px 100%,
-        calc(100% - 20px) 100%,
-        calc(100% - 20px) calc(100% - 4px),
-        calc(100% - 12px) calc(100% - 4px),
-        calc(100% - 12px) calc(100% - 8px),
-        calc(100% - 8px) calc(100% - 8px),
-        calc(100% - 8px) calc(100% - 12px),
-        calc(100% - 4px) calc(100% - 12px),
-        calc(100% - 4px) calc(100% - 20px),
-        100% calc(100% - 20px),
-        100% 20px,
-        calc(100% - 4px) 20px,
-        calc(100% - 4px) 12px,
-        calc(100% - 8px) 12px,
-        calc(100% - 8px) 8px,
-        calc(100% - 12px) 8px,
-        calc(100% - 12px) 4px,
-        calc(100% - 20px) 4px,
-        calc(100% - 20px) 0px,
-        20px 0px,
-        20px 4px,
-        12px 4px,
-        12px 8px,
-        8px 8px,
-        8px 12px,
-        4px 12px,
-        4px 20px,
-        0px 20px
-      );
-    
-    
+    background-image: url(images/5bd170bb4655992be36d6034b35224fd.png);
+
 }
 
 .image-container img{
