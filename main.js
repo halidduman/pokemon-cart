@@ -41,6 +41,7 @@ const bg_color = {
   rock: '#C5B679',
   dragon: '#7766EE',
   ice: '#66CCFF',
+  ghost:'#97136d',
 }
 
 // -----------------------------------------------
@@ -57,7 +58,7 @@ searchInput.addEventListener("input",()=> {
         if(pokemonName.innerHTML.toLocaleLowerCase().includes(searchValue)) {
              pokemonName.parentElement.parentElement.style.display="block"
         } else {
-            pokemonName.parentElement.parentElement.style.display="none"
+            pokemonName.parentElement.parentElement.style.display="none "
         }
     })
 })
