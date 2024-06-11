@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('images/background.svg') no-repeat center center/cover;
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1679AB;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+    width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+    background: #1679AB;
+}
+
+.background-animation{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    animation: moveBackground 15s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+h1{
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+h3{
+    color: #ffff;
+}
+
+.search{
+    position: relative;
+}
+
+.search-Input{
+    font-family: "Pixelify Sans", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    border: none;
+    font-size:16px;
+    padding: 12px;
+    height: 10px;
+    width: 15px;
+    transition: with 0.3s ease;
+    
+}
+
+.search-Input,.searchBtn:focus{
+    outline: none;
+    font-family: "Pixelify Sans", sans-serif;
+    border: 3px solid #1679AB;
+    border-radius: 1px;
+    clip-path: polygon(
+        0px calc(100% - 20px),
+        4px calc(100% - 20px),
+        4px calc(100% - 12px),
+        8px calc(100% - 12px),
+        8px calc(100% - 8px),
+        12px calc(100% - 8px),
+        12px calc(100% - 4px),
+        20px calc(100% - 4px),
+        20px 100%,
+        calc(100% - 20px) 100%,
+        calc(100% - 20px) calc(100% - 4px),
+        calc(100% - 12px) calc(100% - 4px),
+        calc(100% - 12px) calc(100% - 8px),
+        calc(100% - 8px) calc(100% - 8px),
+        calc(100% - 8px) calc(100% - 12px),
+        calc(100% - 4px) calc(100% - 12px),
+        calc(100% - 4px) calc(100% - 20px),
+        100% calc(100% - 20px),
+        100% 20px,
+        calc(100% - 4px) 20px,
+        calc(100% - 4px) 12px,
+        calc(100% - 8px) 12px,
+        calc(100% - 8px) 8px,
+        calc(100% - 12px) 8px,
+        calc(100% - 12px) 4px,
+        calc(100% - 20px) 4px,
+        calc(100% - 20px) 0px,
+        20px 0px,
+        20px 4px,
+        12px 4px,
+        12px 8px,
+        8px 8px,
+        8px 12px,
+        4px 12px,
+        4px 20px,
+        0px 20px
+      );
+    
+}
+
+.searchBtn{
+background-color: rgb(203, 234, 250);
+border: none;
+color: #fff;
+font-size: 33px;
+position: absolute;
+top: 0;
+left: 0;
+transition: transform 0.3s ease
+}
+
+
+
+.search.active .search-Input{
+width: 200px;
+background-color: #fff;
+background-color: #dfdfdf;
+}
+
+.search.active .searchBtn{
+    transform: translateX(198px);
+    background-color: transparent;
+    color: #000000;
+}
+
+.poke-container{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 85%;
+    color: #ffff;
+}
+
+.poke-xp img{
+    color: white;
+    width: 20px;
+    transform: translateY(5px);
+}
+
+.poke-weight img{
+    color: white;
+    width: 20px;
+    transform: translate(-5px,5px);
+}
+
+.poke-type img{
+    color: white;
+    width: 20px;
+    transform: translate(-5px,5px);
+}
+
+.pokemon{
+    margin: 10px;
+    padding: 20px;
+    clip-path: polygon(
+        0px calc(100% - 20px),
+        4px calc(100% - 20px),
+        4px calc(100% - 12px),
+        8px calc(100% - 12px),
+        8px calc(100% - 8px),
+        12px calc(100% - 8px),
+        12px calc(100% - 4px),
+        20px calc(100% - 4px),
+        20px 100%,
+        calc(100% - 20px) 100%,
+        calc(100% - 20px) calc(100% - 4px),
+        calc(100% - 12px) calc(100% - 4px),
+        calc(100% - 12px) calc(100% - 8px),
+        calc(100% - 8px) calc(100% - 8px),
+        calc(100% - 8px) calc(100% - 12px),
+        calc(100% - 4px) calc(100% - 12px),
+        calc(100% - 4px) calc(100% - 20px),
+        100% calc(100% - 20px),
+        100% 20px,
+        calc(100% - 4px) 20px,
+        calc(100% - 4px) 12px,
+        calc(100% - 8px) 12px,
+        calc(100% - 8px) 8px,
+        calc(100% - 12px) 8px,
+        calc(100% - 12px) 4px,
+        calc(100% - 20px) 4px,
+        calc(100% - 20px) 0px,
+        20px 0px,
+        20px 4px,
+        12px 4px,
+        12px 8px,
+        8px 8px,
+        8px 12px,
+        4px 12px,
+        4px 20px,
+        0px 20px
+      );
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.image-container{
+    background-color: #102C57;
+    clip-path: polygon(
+        0px calc(100% - 20px),
+        4px calc(100% - 20px),
+        4px calc(100% - 12px),
+        8px calc(100% - 12px),
+        8px calc(100% - 8px),
+        12px calc(100% - 8px),
+        12px calc(100% - 4px),
+        20px calc(100% - 4px),
+        20px 100%,
+        calc(100% - 20px) 100%,
+        calc(100% - 20px) calc(100% - 4px),
+        calc(100% - 12px) calc(100% - 4px),
+        calc(100% - 12px) calc(100% - 8px),
+        calc(100% - 8px) calc(100% - 8px),
+        calc(100% - 8px) calc(100% - 12px),
+        calc(100% - 4px) calc(100% - 12px),
+        calc(100% - 4px) calc(100% - 20px),
+        100% calc(100% - 20px),
+        100% 20px,
+        calc(100% - 4px) 20px,
+        calc(100% - 4px) 12px,
+        calc(100% - 8px) 12px,
+        calc(100% - 8px) 8px,
+        calc(100% - 12px) 8px,
+        calc(100% - 12px) 4px,
+        calc(100% - 20px) 4px,
+        calc(100% - 20px) 0px,
+        20px 0px,
+        20px 4px,
+        12px 4px,
+        12px 8px,
+        8px 8px,
+        8px 12px,
+        4px 12px,
+        4px 20px,
+        0px 20px
+      );
+    
+    
+}
+
+.image-container img{
+    width: 180px;
+    opacity: 0.75;
+    transition: all 0.5s ease;
+}
+
+.pokemon:hover .image-container img{
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+.poke-info{
+    margin-top: 20px;
+}
+
+.poke-id{
+    background-color: #0000002b;
+    border-radius: 3rem;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+.poke-name{
+    letter-spacing: 2px;
+    margin: 15px 0 10px;
+    text-transform: capitalize;
+}
+
+.small small{
+padding: 0 5px;
+}
+
+.poke-type{
+    margin-top: 10px;
+}
