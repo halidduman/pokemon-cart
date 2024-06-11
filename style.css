@@ -118,13 +118,14 @@ h3{
 }
 
 .search-Input{
+    margin-bottom: 25px;
     font-family: "Pixelify Sans", sans-serif;
     font-family: 'Courier New', Courier, monospace;
-    background-color: transparent;
+    background-color: transparent;  
     border: none;
     font-size:16px;
     padding: 12px ;
-    height: 15px;
+    height: 25px;
     width: 20px;
     transition: with 0.3s ease;
     
@@ -143,23 +144,43 @@ h3{
 }
 
 .searchBtn {
-background-color: rgb(203, 234, 250);
+    background-color: transparent;
 border: none;
 color: #fff;
 font-size: 33px;
 position: absolute;
 top: 0;
-left: -7px;
+left: -9px;
 transition: transform 0.3s ease
 }
 
+#poke-logo{
+    filter: drop-shadow(0px 0px 3px #4CA2FF)
+            drop-shadow(0px 0px 6px #69b1ff)
+            drop-shadow(0px 0px 9px #4CA2FF)
+            drop-shadow(0px 0px 12px #94c8ff)
+            drop-shadow(0px 0px 15px #dcedff);
+}
+
+.redShadow{
+    filter: drop-shadow(0px 0px 3px #ff4c4c) 
+            drop-shadow(0px 0px 6px #ff6969)
+            drop-shadow(0px 0px 9px #ff4c4c)
+            drop-shadow(0px 0px 12px #ff9494)
+            drop-shadow(0px 0px 15px #ffdcdc) ;
+}
 
 
 .search.active .search-Input{
 width: 200px;
-background-color: #fff;
-background-color: #dfdfdf;
+
+
 }
+
+.bg-active{
+    background-color: #e0eeff;
+}
+
 
 .search.active .searchBtn{
     transform: translateX(198px);
@@ -227,6 +248,10 @@ background-color: #dfdfdf;
     border-radius: 3rem;
     padding: 5px 10px;
     font-size: 0.85rem;
+}
+
+#poke-logo{
+    height: 60px !important;
 }
 
 .poke-name{
