@@ -48,6 +48,20 @@ searchBtn.addEventListener("click", ()=>{
     search.classList.toggle("active")
 })
 
+searchInput.addEventListener("input",()=> {
+    const searchValue = searchInput.value.toLowerCase()
+    const pokemonNames= document.querySelectorAll(".poke-name")
+    
+
+    pokemonNames.forEach((pokemonName) => {
+        if(pokemonName.innerHTML.toLocaleLowerCase().includes(searchValue)) {
+             pokemonName.parentElement.parentElement.style.display="block"
+        } else {
+            pokemonName.parentElement.parentElement.style.display="none"
+        }
+    })
+})
+
 const fetchPokemons = async()=> {
     for( let i = 1; i <pokemon_count; i++){
         await getPokemon(i)
